@@ -1,0 +1,122 @@
+:root{
+    --red: #D01C28;
+    --gray: #2E2E2E;
+}
+.container{
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 0 3vw;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-weight: bold;
+}
+nav ul li:hover{
+    scale: 1.1;
+    color: #D01C28;
+}
+nav button:hover{
+    scale: 1.1;
+}
+button{
+    all: unset;
+    padding: 6px 16px;
+    border-radius: 5px;
+    background-color: var(--red);
+    color: white;
+    font-weight: 500;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+    margin: 0 10vw;
+}
+.hero h1{
+    font-weight: 800;
+    font-size: 6vw;
+    line-height: 12vh;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.hero-content p{
+    color: var(--gray);
+    font-weight: 500;
+    max-width: 30vw;
+}
+.hero-btn{
+    display: flex;
+    gap: 40px;
+}
+.shopping p{
+    color: var(--gray);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.brand-icons{
+    display: flex;
+    gap: 20px;
+}
+.hero-img:hover{
+    scale: 1.1;
+}
+
+@media screen and (max-width: 600px){
+    nav ul{
+        display: none;
+    }
+    .hero-img img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .hero h1{
+        line-height: normal;
+    }
+    .hero-content p{
+        max-width: 40vw;
+        font-size: 14px;
+    }
+    .hero-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+}  
+@media screen and (max-width: 750px){
+    .hero-img img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .hero h1{
+        line-height: normal;
+    }
+    .hero-content p{
+        max-width: 40vw;
+        font-size: 14px;
+    }
+}  
+@media screen and (max-width: 900px){
+    .hero-img img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .hero h1{
+        line-height: normal;
+    }
+    .hero-content p{
+        max-width: 40vw;
+        font-size: 14px;
+    }
+}  
